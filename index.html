@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
     <meta name="theme-color" content="#111519" />
     <title>HyCS</title>
     <link rel="manifest" href="./manifest.webmanifest" />
@@ -17,19 +17,19 @@
       /* Startbildschirm: Ringe fallen an die Stange und pendeln kurz aus. Wird in main.tsx entfernt. */
       #splash { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: #111519; transition: opacity 0.28s ease; }
       #splash.out { opacity: 0; pointer-events: none; }
-      #splash .mark { width: 112px; height: 112px; overflow: visible; }
-      #splash .straps { transform-origin: 32px 12px; animation: sp-strap 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) 0.08s both; }
-      #splash .rings { animation: sp-drop 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s both; }
-      #splash .swing { transform-origin: 32px 12px; animation: sp-swing 0.9s ease-out 0.45s both; }
-      #splash .word { margin-top: 18px; font: 800 30px/1 'Big Shoulders Display', system-ui, sans-serif; letter-spacing: 3px; color: #ece9e3; text-align: center; opacity: 0; animation: sp-fade 0.4s ease 0.7s both; }
+      #splash .mark { width: 168px; height: 168px; overflow: visible; }
+      #splash .straps { transform-origin: 32px 12px; animation: sp-strap 0.65s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s both; }
+      #splash .rings { animation: sp-drop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) 0.55s both; }
+      #splash .swing { transform-origin: 32px 12px; animation: sp-swing 1.5s ease-out 0.8s both; }
+      #splash .word { margin-top: 26px; font: 800 45px/1 'Big Shoulders Display', system-ui, sans-serif; letter-spacing: 4.5px; color: #ece9e3; text-align: center; opacity: 0; animation: sp-fade 0.6s ease 1.2s both; }
       @keyframes sp-strap { from { transform: scaleY(0); } to { transform: scaleY(1); } }
       @keyframes sp-drop { from { transform: translateY(-10px); opacity: 0; } to { transform: none; opacity: 1; } }
       @keyframes sp-swing { 0% { transform: rotate(0); } 25% { transform: rotate(4deg); } 55% { transform: rotate(-2.5deg); } 80% { transform: rotate(1deg); } 100% { transform: rotate(0); } }
       @keyframes sp-fade { to { opacity: 1; } }
       @media (prefers-reduced-motion: reduce) { #splash .straps, #splash .rings, #splash .swing, #splash .word { animation: none; opacity: 1; } }
     </style>
-    <script type="module" crossorigin src="./assets/index-BgPoJjXQ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C_x3OYG9.css">
+    <script type="module" crossorigin src="./assets/index-CK6QcdmO.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-MEMR3446.css">
   </head>
   <body>
     <div id="splash" aria-hidden="true">
