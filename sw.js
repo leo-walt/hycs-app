@@ -1,7 +1,7 @@
 // Automatisch erzeugt (vite.config.ts) — nicht von Hand aendern.
-const CACHE = 'hycs-1b99qee';
+const CACHE = 'hycs-1src524';
 const FONTS = 'hycs-fonts';
-const PRECACHE = ["./","./assets/index-B7DE5J9i.css","./assets/index-CqcSevbb.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
+const PRECACHE = ["./","./assets/index-Usm3hCJu.css","./assets/index-DaLIrPGm.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
