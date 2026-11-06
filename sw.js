@@ -1,7 +1,7 @@
 // Automatisch erzeugt (vite.config.ts) — nicht von Hand aendern.
-const CACHE = 'hycs-1src524';
+const CACHE = 'hycs-1vpf29i';
 const FONTS = 'hycs-fonts';
-const PRECACHE = ["./","./assets/index-Usm3hCJu.css","./assets/index-DaLIrPGm.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
+const PRECACHE = ["./","./assets/index-DLroRGGy.css","./assets/plan-Dn0wgsfO.css","./assets/Onboarding-Mobm9giK.css","./assets/stats-PyFyHaFV.css","./assets/hb-hub-hJJ7w6gd.css","./assets/index-BAYqKtVb.js","./assets/Plan-BdVRwz39.js","./assets/DayRunner-BaVj1xSL.js","./assets/plan-Di3ggqvV.js","./assets/Onboarding-DjTMn6EG.js","./assets/Profile-CrnyBCDc.js","./assets/Summary-BFM_9Uxn.js","./assets/TemplateEditor-BHmSf0pu.js","./assets/ExerciseDetail-AV9Mcldh.js","./assets/Stats-BgyBZnje.js","./assets/History-_oZHLj1Y.js","./assets/Entry-oNSPx6Fd.js","./assets/stats-C2ruqMEE.js","./assets/Hub-Brw1mIUL.js","./assets/Area-BJBWEaGq.js","./assets/SkillDetail-DybDWXQ-.js","./assets/HbNodeSheet-HYYoGWDg.js","./assets/hb-hub-COOEobcr.js","./assets/hb-lib-CmaEG7Y9.js","./assets/Program-C_Zdfjk3.js","./assets/CustomPlanEditor-CdiGfK3W.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
