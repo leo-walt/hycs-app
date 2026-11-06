@@ -27,9 +27,28 @@
       @keyframes sp-swing { 0% { transform: rotate(0); } 25% { transform: rotate(4deg); } 55% { transform: rotate(-2.5deg); } 80% { transform: rotate(1deg); } 100% { transform: rotate(0); } }
       @keyframes sp-fade { to { opacity: 1; } }
       @media (prefers-reduced-motion: reduce) { #splash .straps, #splash .rings, #splash .swing, #splash .word { animation: none; opacity: 1; } }
+      html[data-theme="light-warm"] #splash { background: #faf6f0; }
+      html[data-theme="light-airy"] #splash { background: #f6f7fb; }
+      html[data-theme^="light"] #splash .mark rect { fill: #2b2623; }
+      html[data-theme^="light"] #splash .straps path { stroke: #70655c; }
+      html[data-theme^="light"] #splash .rings circle { stroke: #a67c2e; }
+      html[data-theme^="light"] #splash .word { color: #2b2623; }
     </style>
-    <script type="module" crossorigin src="./assets/index-BAYqKtVb.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DLroRGGy.css">
+    <script>
+      // Design vor dem ersten Rendern setzen (kein dunkles Aufblitzen). Gegenstueck: src/state/theme.ts.
+      (function () {
+        try {
+          var t = localStorage.getItem('hycs:theme');
+          if (t !== 'light-warm' && t !== 'light-airy') return;
+          document.documentElement.setAttribute('data-theme', t);
+          var bar = t === 'light-warm' ? '#faf6f0' : '#f6f7fb';
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', bar);
+          document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').setAttribute('content', 'default');
+        } catch (e) { /* Standard: dunkel */ }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-BhQDlHqS.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D318-OL3.css">
   </head>
   <body>
     <div id="splash" aria-hidden="true">
@@ -47,6 +66,6 @@
         <div class="word">HYCS</div>
       </div>
     </div>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
