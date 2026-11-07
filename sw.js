@@ -1,7 +1,7 @@
 // Automatisch erzeugt (vite.config.ts) — nicht von Hand aendern.
-const CACHE = 'hycs-1qpzkuf';
+const CACHE = 'hycs-1gjb8tx';
 const FONTS = 'hycs-fonts';
-const PRECACHE = ["./","./assets/index-B8L-P9ex.css","./assets/Onboarding-rHxCFhuA.css","./assets/stats-B0zwB1LD.css","./assets/index-CbP1Lhuq.js","./assets/Plan-DBh0gsWj.js","./assets/Onboarding-DGkPgh83.js","./assets/Profile-2EkrFLE2.js","./assets/Summary-DHDt2e8e.js","./assets/TemplateEditor-CBqmZ89o.js","./assets/ExerciseDetail-C9F9pu1R.js","./assets/Stats-CeYCXp1a.js","./assets/StrengthCurve-pX3JUrah.js","./assets/History-B9oR6ZeU.js","./assets/Entry-DvbQOewH.js","./assets/stats-gAwx72-V.js","./assets/Hub-B2Y_8Hg8.js","./assets/Area-RhVvT7B_.js","./assets/SkillDetail-C6KYxtJf.js","./assets/HbNodeSheet-Dx73RChn.js","./assets/hb-lib-BPMrbQ_U.js","./assets/Program-G7tlWM8z.js","./assets/CustomPlanEditor-D52jIcxb.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
+const PRECACHE = ["./","./assets/index-BVn4VTwn.css","./assets/Onboarding-rHxCFhuA.css","./assets/stats-B0zwB1LD.css","./assets/index-D0-YIoxm.js","./assets/Plan-BLiL2cxC.js","./assets/Onboarding-d4PrfYpH.js","./assets/Profile-DUnw1fty.js","./assets/Summary-BJ7tEoR5.js","./assets/TemplateEditor-zgw2LJbL.js","./assets/ExerciseDetail-CCYFqK-m.js","./assets/Stats-bdhj5No4.js","./assets/StrengthCurve-rne9X0sS.js","./assets/History-e6maxssr.js","./assets/Entry-CW2LNN4k.js","./assets/stats-gAwx72-V.js","./assets/Hub-DIdztjom.js","./assets/Area-BQqZTTyF.js","./assets/SkillDetail-DJ4JLwhg.js","./assets/HbNodeSheet-CuN1yUVc.js","./assets/hb-lib-Dazamon7.js","./assets/Program-B5DYvzxK.js","./assets/CustomPlanEditor-DzoZMAZF.js","./manifest.webmanifest","./favicon.png","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
