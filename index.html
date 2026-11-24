@@ -29,6 +29,7 @@
       @media (prefers-reduced-motion: reduce) { #splash .straps, #splash .rings, #splash .swing, #splash .word { animation: none; opacity: 1; } }
       html[data-theme="light-warm"] #splash { background: #faf6f0; }
       html[data-theme="light-airy"] #splash { background: #f6f7fb; }
+      html[data-theme="red-black"] #splash { background: #0a0a0b; }
       html[data-theme^="light"] #splash .mark rect { fill: #2b2623; }
       html[data-theme^="light"] #splash .straps path { stroke: #70655c; }
       html[data-theme^="light"] #splash .rings circle { stroke: #a67c2e; }
@@ -39,16 +40,16 @@
       (function () {
         try {
           var t = localStorage.getItem('hycs:theme');
-          if (t !== 'light-warm' && t !== 'light-airy') return;
+          var bars = { 'light-warm': '#faf6f0', 'light-airy': '#f6f7fb', 'red-black': '#0a0a0b' };
+          if (!bars[t]) return;
           document.documentElement.setAttribute('data-theme', t);
-          var bar = t === 'light-warm' ? '#faf6f0' : '#f6f7fb';
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', bar);
-          document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').setAttribute('content', 'default');
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', bars[t]);
+          if (t !== 'red-black') document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').setAttribute('content', 'default');
         } catch (e) { /* Standard: dunkel */ }
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-BRVNH3X0.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DJv8_HL9.css">
+    <script type="module" crossorigin src="./assets/index-V-eYWb3J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BvJuiXdm.css">
   </head>
   <body>
     <div id="splash" aria-hidden="true">
