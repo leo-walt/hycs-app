@@ -1,1 +1,0 @@
-import{j as r,T as a,t,P as n}from"./index-V-eYWb3J.js";function i(){return r.jsxs(r.Fragment,{children:[r.jsx(a,{title:t("Programme","Programs"),sub:t("Dein Training","Your training"),back:!0}),r.jsx(n,{})]})}export{i as Plan};
